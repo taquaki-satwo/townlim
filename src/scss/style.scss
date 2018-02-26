@@ -1,0 +1,281 @@
+/* ==========================================================================
+   Foundation
+   ========================================================================== */
+
+/* Reset
+   ----------------------------------------------------------------- */
+a {
+  text-decoration: none;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
+/* Import
+  ----------------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+
+
+/* Vars
+  ----------------------------------------------------------------- */
+$font: 'Josefin Slab', serif;
+
+// color
+$key: #21468d;
+$sub: #18c4db;
+$base: #f5f5f5;
+$black: #333;
+$black-l: #999;
+
+// shadow
+$shadow-m: 0 2px 5px rgba(0,0,0,.2);
+$shadow-l: 0 5px 10px rgba(0,0,0,.2);
+$shadow-text: 1px 1px 0 rgba(0,0,0,.2);
+
+
+
+/* Mixin
+  ----------------------------------------------------------------- */
+@mixin bgColor-l($color) {
+  &:hover, &:active, &:focus {
+    background: lighten($color, 20%);
+  }
+}
+
+@mixin bgColor-d($color) {
+  &:hover, &:active, &:focus {
+    background: darken($color, 20%);
+  }
+}
+
+@mixin linkColor-l($color) {
+  color: $color;
+
+  &:hover, &:active, &:focus {
+    color: lighten($color, 20%);
+  }
+}
+
+@mixin linkColor-d($color) {
+  color: $color;
+
+  &:hover, &:active, &:focus {
+    color: darken($color, 20%);
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+/* Base
+   ----------------------------------------------------------------- */
+html, body {
+
+}
+
+body {
+  padding-top: 50px;
+  background: $base;
+}
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* Nav
+   ----------------------------------------------------------------- */
+.navbar {
+  background: $key;
+  border: none;
+  text-shadow: $shadow-text;
+  box-shadow: $shadow-l;
+  margin: 0;
+  font-family: $font;
+
+  &_header {
+  }
+
+  &-brand {
+    font-weight: bold;
+    color: white;
+    transition: background .2s ease-in;
+
+    &:hover {
+      color: white;
+      background: lighten($key, 5%);
+    }
+  }
+
+  &-toggle {
+
+    span {
+      background: white;
+    }
+  }
+
+  &-nav {
+
+    li > a {
+      color: white;
+      transition: background .2s ease-in;
+
+      &:hover, &:active, &:focus {
+        background: lighten($key, 5%);
+      }
+    }
+
+    li.disabled > a {
+      @include linkColor-l($key);
+      color: lighten($key, 20%);
+    }
+  }
+}
+
+.dropdown {
+
+  &.open {
+
+    > a {
+      background: lighten($key, 5%);
+
+      &:hover, &:active, &:focus {
+        background: lighten($key, 5%);
+      }
+    }
+  }
+
+  &-menu {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+
+    li {
+
+      & > a {
+        background: lighten($key, 5%);
+
+        padding: 5px 20px;
+        font-weight: normal;
+
+        &:hover, &:active, &:focus {
+          color: white;
+          background: lighten($key, 10%);
+        }
+      }
+    }
+  }
+}
+
+/* Page Header
+   ----------------------------------------------------------------- */
+.page-header {
+  text-align: center;
+  margin: 0 0 30px;
+  padding: 15px 0 14px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+
+  h1 {
+    color: $black;
+    margin: 0 auto;
+    font-family: $font;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+  }
+}
+
+/* Page Header
+   ----------------------------------------------------------------- */
+footer {
+  background: $key;
+  padding: 2em 0;
+  text-align: center;
+  box-shadow: $shadow-l inset;
+  margin-top: 10px;
+  width: 100%;
+
+  address {
+    margin-bottom: 10px;
+
+    a {
+      @include linkColor-l(white);
+      padding: 0 10px;
+      text-shadow: $shadow-text;
+    }
+  }
+
+  small {
+    font-family: $font;
+    text-shadow: $shadow-text;
+    margin: 0 auto;
+    color: white;
+  }
+}
+
+/* Button
+   ----------------------------------------------------------------- */
+.btn {
+  background: $sub;
+  color: white;
+  border-radius: 0;
+  font-family: $font;
+  box-shadow: $shadow-m, 0 0 0 rgba(0,0,0,0) inset;
+  transition: box-shadow .2s ease-in;
+
+  &:hover, &:focus, &:active {
+    color: white;
+    box-shadow: 0 0 0 rgba(0,0,0,0), $shadow-m inset;
+  }
+}
+
+/* Main
+   ----------------------------------------------------------------- */
+
+
+/* Section
+   ----------------------------------------------------------------- */
+
+
+/* ==========================================================================
+   Object
+   ========================================================================== */
+
+/* Component
+   ----------------------------------------------------------------- */
+@import "panel";
+@import "modal";
+
+
+/* Project
+   ----------------------------------------------------------------- */
+
+/**
+ * Articles
+ */
+
+
+/* Utitlity
+   ----------------------------------------------------------------- */
+
+/**
+ * Clearfix
+ */
+
+
+
+/**
+ * Display
+ */
+
+
+/**
+ * Margin
+ */

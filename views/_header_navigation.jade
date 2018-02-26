@@ -1,0 +1,134 @@
+// Header navigation
+nav.navbar.navbar-fixed-top
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href="/")
+        i.fa.fa-map-marker
+        |  Townlim
+    
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li.dropdown
+          a.dropdown-toggle(href="/", data-toggle="dropdown", role="button", aria-expanded="false")
+            i.fa.fa-building-o.fa-fw
+            |  Tokyo
+          ul.dropdown-menu(role="menu")
+            li
+              a(href="/towns/shibuya")
+                i.fa.fa-angle-right.fa-fw
+                |  SHIBUYA
+            li
+              a(href="/towns/shinjuku")
+                i.fa.fa-angle-right.fa-fw
+                |  SHINJUKU
+            li
+              a(href="/towns/ginza")
+                i.fa.fa-angle-right.fa-fw
+                |  GINZA
+            li
+              a(href="/towns/roppongi")
+                i.fa.fa-angle-right.fa-fw
+                |  ROPPONGI
+            li
+              a(href="/towns/odaiba")
+                i.fa.fa-angle-right.fa-fw
+                |  ODAIBA
+            li
+              a(href="/towns/akihabara")
+                i.fa.fa-angle-right.fa-fw
+                |  AKIHABARA
+            li
+              a(href="/towns/asakusa")
+                i.fa.fa-angle-right.fa-fw
+                |  ASAKUSA
+            li
+              a(href="/towns/kichijoji")
+                i.fa.fa-angle-right.fa-fw
+                |  KICHIJOJI
+            li
+              a(href="/towns/haneda")
+                i.fa.fa-angle-right.fa-fw
+                |  HANEDA
+        li.dropdown
+          a.dropdown-toggle(href="/", data-toggle="dropdown", role="button", aria-expanded="false")
+            i.fa.fa-building-o.fa-fw
+            |  Towns
+          ul.dropdown-menu(role="menu")
+            li
+              a(href="/towns/yokohama")
+                i.fa.fa-angle-right.fa-fw
+                |  YOKOHAMA
+            li
+              a(href="/towns/kamakura")
+                i.fa.fa-angle-right.fa-fw
+                |  KAMAKURA
+            li
+              a(href="/towns/maihama")
+                i.fa.fa-angle-right.fa-fw
+                |  MAIHAMA
+            li
+              a(href="/towns/narita")
+                i.fa.fa-angle-right.fa-fw
+                |  NARITA
+            li
+              a(href="/towns/osaka")
+                i.fa.fa-angle-right.fa-fw
+                |  OSAKA
+            li
+              a(href="/towns/kyoto")
+                i.fa.fa-angle-right.fa-fw
+                |  KYOTO
+            li
+              a(href="/towns/sapporo")
+                i.fa.fa-angle-right.fa-fw
+                |  SAPPORO
+        li.dropdown
+          a.dropdown-toggle(href="/", data-toggle="dropdown", role="button", aria-expanded="false")
+            i.fa.fa-building-o.fa-fw
+            |  Event
+          ul.dropdown-menu(role="menu")
+            li
+              a(href="/events/tokyo-dome")
+                i.fa.fa-angle-right.fa-fw
+                |  TOKYO DOME
+            li
+              a(href="/events/budokan")
+                i.fa.fa-angle-right.fa-fw
+                |  BUDOKAN
+            li
+              a(href="/events/kyocera-dome")
+                i.fa.fa-angle-right.fa-fw
+                |  KYOCERA DOME
+            li
+              a(href="/events/sapporo-dome")
+                i.fa.fa-angle-right.fa-fw
+                |  SAPPORO DOME
+            li
+              a(href="/events/nagoya-dome")
+                i.fa.fa-angle-right.fa-fw
+                |  NAGOYA DOME
+            li
+              a(href="/events/fukuoka-dome")
+                i.fa.fa-angle-right.fa-fw
+                |  FUKUOKA DOME
+            li
+              a(href="/events/makuhari-messe")
+                i.fa.fa-angle-right.fa-fw
+                |  MAKUHARI MESSE
+        li.disabled
+          a
+            i.fa.fa-users.fa-fw
+            |  Users
+        li.disabled
+          a
+            i.fa.fa-coffee.fa-fw
+            |  Shops
+        li.disabled
+          a
+            i.fa.fa-info.fa-fw
+            |  About

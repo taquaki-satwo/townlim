@@ -1,0 +1,34 @@
+// Modal window
+#modal.modal.fade(tabindex="-1")
+  .modal-dialog
+    .modal-content
+    
+      .modal-header
+        button.close(type="button", data-dismiss="modal")
+          span ×
+          
+        .user
+        
+          .user-left
+            img.userimg.img-responsive.img-circle(src="#", alt="fullname")
+            
+          .user-right
+            h4.modal-title.locname
+              a(href="#" target="_blank")
+                i.fa.fa-map-marker
+                | 
+                span Location name
+            .name
+              a.userurl(href="#", target="_blank")
+                i.fa.fa-user
+                | 
+                span User name
+            .imgtime
+              a.page(href="#", target="_blank")
+                i.fa.fa-clock-o
+                | 
+                span Ceated time
+
+      .modal-body
+        p.captext Cpation text
+        #map

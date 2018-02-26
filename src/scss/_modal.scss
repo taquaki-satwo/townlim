@@ -1,0 +1,126 @@
+.modal {
+
+  &-dialog {
+  }
+
+  &-content {
+    border: none;
+    box-shadow: $shadow-l;
+    border-radius: 0;
+    @include clearfix;
+  }
+
+  &-header {
+    border: none;
+    position: relative;
+
+    .user {
+      @include clearfix;
+
+      &-left,
+      &-right {
+        padding: 0 15px 0 0;
+      }
+
+      &-left {
+        float: left;
+        width: 25%;
+      }
+
+      &-right {
+        float: left;
+        width: 75%;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 1.3em;
+    line-height: 1em;
+    margin-bottom: .2em;
+
+    a {
+      @include linkColor-l($key);
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  &-body {
+    padding: 0;
+  }
+
+  .userimg {
+    width: 100%;
+  }
+
+  .name {
+    font-size: 1em;
+    line-height: 1em;
+
+    a {
+      @include linkColor-l($sub);
+    }
+  }
+
+  .imgtime {
+    font-size: .8em;
+
+    a {
+      @include linkColor-l($black-l);
+    }
+  }
+
+  .captext {
+    padding: 0 15px 5px;
+    color: $black;
+  }
+}
+
+@media (min-width: 768px) {
+.modal {
+
+  &-header {
+
+    .user {
+
+      &-left {
+        width: 20%;
+      }
+
+      &-right {
+        width: 80%;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 2.2em;
+    line-height: 1em;
+    margin-bottom: .1em;
+  }
+
+  .name {
+    font-size: 1.4em;
+  }
+
+  .imgtime {
+    font-size: 1em;
+  }
+}
+}
+
+// Map
+#map {
+  width: 100%;
+}
+
+.infowindow {
+  img {
+    width: 200px;
+  }
+}
